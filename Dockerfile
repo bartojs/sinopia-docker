@@ -15,4 +15,4 @@ COPY config.yaml /usr/local/etc/sinopia/
 USER sinopia 
 VOLUME /var/data
 EXPOSE 4873
-ENTRYPOINT ["sinopia" "--config" "/usr/local/etc/sinopia/config.yaml"]
+ENTRYPOINT ["sinopia", "--config", "/usr/local/etc/sinopia/config.yaml"]
