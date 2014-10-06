@@ -13,6 +13,6 @@ RUN mkdir -p /data /usr/local/etc/sinopia && chown -R sinopia /data /usr/local/e
 COPY config.yaml /usr/local/etc/sinopia/
 
 USER sinopia 
-VOLUME /var/data
+VOLUME /data
 EXPOSE 4873
 ENTRYPOINT ["sinopia", "--config", "/usr/local/etc/sinopia/config.yaml"]
