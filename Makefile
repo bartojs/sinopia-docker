@@ -3,4 +3,4 @@ build:
 
 run:
 	echo mkdir -p /var/data/sinopia && chmod -R 777 /var/data/sinopia
-	docker run -d -p 4873:4873 -v /var/data/sinpoia:/data bartojs/sinopia
+	docker run -d -p 4873:4873 -v /var/data/sinpoia:/data --name sinopia1 bartojs/sinopia
